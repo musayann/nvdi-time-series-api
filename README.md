@@ -9,8 +9,6 @@ This FastAPI project provides an API endpoint to compute NDVI time series over a
 - Aggregates results spatially using the mean reducer
 - Returns NDVI time series data as GeoJSON or JSON
 
----
-
 ## API Reference
 
 ### `POST /ndvi/timeseries`
@@ -81,8 +79,6 @@ OPENEO_CLIENT_SECRET="CLIENT_SECRET_PLACEHOLDER"
 ```
 
 Rename it to `.env` and replace placeholder values with your actual OpenEO credentials.
-
----
 
 ## Running the API
 
