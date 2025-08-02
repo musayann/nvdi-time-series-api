@@ -1,0 +1,6 @@
+from src.utils.env_loader import env
+
+
+OPENEO_API_URL = env("OPENEO_API_URL")
+OPENEO_CLIENT_ID = env("OPENEO_CLIENT_ID")
+OPENEO_CLIENT_SECRET = env("OPENEO_CLIENT_SECRET")
