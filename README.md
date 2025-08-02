@@ -40,14 +40,17 @@ Request the NDVI time series for a specified polygon and date range.
 ## Project Structure
 
 ```
-.
 ├── src/
-│   ├── main.py           # FastAPI entry point
-│   ├── schema.py         # Pydantic request schema
-│   ├── service.py        # NDVI processing logic
-│   └── config.py         # Environment configuration
-├── .env.sample           # Sample environment variables
-├── requirements.txt      # Python dependencies
+│   ├── ndvi/
+│   │   ├── api.py           # FastAPI route for NDVI endpoint
+│   │   ├── schema.py        # Pydantic request schema
+│   │   └── service.py       # NDVI processing logic
+│   ├── utils/
+│   │   └── env_loader.py    # Utility to load environment variables
+│   ├── config.py            # OpenEO configuration settings
+│   └── main.py              # FastAPI entry point
+├── .env.sample              # Sample environment variables
+├── requirements.txt         # Python dependencies
 ```
 
 ## Setup
